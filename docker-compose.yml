@@ -1,0 +1,8 @@
+services:
+  eva-app:
+    build: .
+    image: eva-app
+    container_name: eva-app
+    ports:
+      - "127.0.0.1:7860:7860"
+    restart: unless-stopped
